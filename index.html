@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2>Can you beat the computer in a game of...</h2>
+        <h1>ROCK! PAPER! SCISSORS!</h1>
+    </header>
+    <section id="introduction">
+        <p>
+            Welcome! Rock, paper, scissors is a game played around the world, though takes many forms. The game originated in ancient China from around the time of Christ, and from there spread throughout Asia and, eventually, the world!
+            <br><br>
+            Let's review the rules. To play the game, you pick one of three choices, either rock, paper, or scissors. Each choice beats one and loses to another:
+            <figure id="win-loss-flow">
+                <img src="img/win loss flow.png" alt="Flow chart of what beats what" class="win-loss=flow" />
+                <br>
+                <figcaption>Rock beats scissors, scissors beats paper, paper beats rock!</figcaption>
+            </figure>
+        </p>
+    </section>    
+    <section id="player-prep">
+        <p>
+            Below, you will choose either rock, paper, or scissors. Once you have made your choice, click the button to face off against the computer. The computer's choice is randomly generated. We'll keep track of your overall wins, losses, and draws. See how many you can win!
+            <br>
+            <span id="good-luck">GOOD LUCK!</span>
+        </p>
+    </section>
+    <section id="game">
+        <figure id="input-figure">
+            <label>
+                <input type="radio" name="rpc-choice" value="rock" class="hidden" checked />
+                <img src="img/rock.jpg" alt="Rock!" class="input-img" />
+            </label>
+        </figure>
+        <figure id="input-figure">
+            <label>
+                <input type="radio" name="rpc-choice" value="paper" class="hidden" />
+                <img src="img/paper.jpg" alt="Paper!" class="input-img" />
+            </label>
+        </figure>
+        <figure id="input-figure">
+            <label>
+                <input type="radio" name="rpc-choice" value="scissors" class="hidden" />
+                <img src="img/scissors.jpg" alt="Scissors!" class="input-img" />
+            </label>
+        </figure>
+    </section>
+    <br>
+    <button id="submit">Rock, paper, scissors, SHOOT!</button>
+    <br>
+    <div class="win-loss-statement">And the winner is...<br><span id="win-loss-statement"></span></div>
+    <br><br>
+    <section id="results">
+        <aside>
+            <p>
+                You chose: <span id="user-choice"></span>
+            </p>
+        </aside>
+        <aside>
+            <p>
+                The computer chose: <span id="computer-choice"></span>
+            </p>
+        </aside>
+        <aside>Total wins: <span id="total-wins"></span></aside>
+        <aside>Total losses: <span id="total-losses"></span></aside>
+        <aside>Total draws: <span id="total-draws"></span></aside>
+        <aside>Total matches: <span id="total-matches"></span></aside>
+    </section>
+    <br>
+    <button id="reset-button">Reset score</button>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

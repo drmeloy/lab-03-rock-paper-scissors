@@ -1,0 +1,222 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #BA1F33;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #177E89;
+    width: 90%;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+header h2 {
+    font-family: 'Noto Sans TC', sans-serif;
+    padding: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 128px;
+    letter-spacing: 6px;
+    margin: 0;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FE4A49;
+    width: 90%;
+    font-family: 'Noto Sans TC', sans-serif;
+    border: 1px solid black;
+    border-bottom: 0;
+    text-align: center;
+}
+
+#introduction p {
+    padding: 40px;
+    font-size: 28px;
+    width: 78%;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+#player-prep {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+    background: #E0BAD7;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+#player-prep p {
+    max-width: 63%;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 26px;
+    
+}
+
+#game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background: #EDD2E0;
+    border: 1px solid black;
+}
+
+input:checked + .input-img {
+    border: 3px solid steelblue;
+}
+
+#input-figure {
+    width: 33%;
+}
+
+.input-img {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.win-loss-statement {
+    background: #177E89;
+    width: 800px;
+    height: 125px;
+    text-align: center;
+    padding: 15px 0px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 28px;
+    border: 1px solid black;
+}
+
+#win-loss-statement {
+    font-size: 56px;
+    padding-top: 90px;
+    padding-bottom: 0;
+}
+
+#results {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 98%;
+    background: #177E89;
+    font-family: 'Noto Sans TC', sans-serif;
+    border: 1px solid black;
+    font-size: 25px;
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#rules {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#win-loss-flow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 50%;
+    margin-top: 32px;
+}
+
+.win-loss-flow {
+    width: 10%;
+    height: auto;
+    size: 500px 500px;
+}
+
+#list {
+    text-align: left;
+    max-width: 30%;
+    height: auto;
+}
+
+#good-luck {
+    font-family: 'Anton', sans-serif;
+    font-size: 100px;
+    letter-spacing: 22px;
+}
+
+.hidden {
+    display: none;
+}
+
+#submit {
+    width: 600px;
+    height: 100px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 28px;
+    border: 2px solid black;
+    transition-duration: .5s;
+}
+
+#submit:hover {
+    background: #fe4a49;
+    border: 2px solid #efe6df
+}
+
+#user-choice {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#computer-choice {
+    font-size: 35px;
+    text-transform: uppercase;;
+}
+
+#total-wins {
+    font-size: 35px;
+}
+
+#total-losses {
+    font-size: 35px;
+}
+
+#total-draws {
+    font-size: 35px;
+}
+
+#total-matches {
+    font-size: 35px;
+}
+
+#reset-button {
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 28px;
+    border: 2px solid black;
+    transition-duration: .5s;
+}
+
+#reset-button:hover {
+    background: #fe4a49;
+    border: 2px solid #efe6df
+}
